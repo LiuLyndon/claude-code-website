@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:docs": "ng build --base-href /claude-code-website/ && rm -rf docs && cp -r dist/claude-code-website/browser docs",
     "watch": "ng build --watch --configuration development"
   },
   "private": true,
